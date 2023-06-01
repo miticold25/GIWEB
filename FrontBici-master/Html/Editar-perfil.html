@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="/Css/Editar-perfil.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+
+    <script src="../Js/EditarPerfil.js"></script>
+    <title>Editar perfil</title>
+    
+</head>
+<body>
+    <nav class="nav justify-content-center bg-info text-bg-info p-2">
+        <h2>Editar Perfil</h2>
+    </nav>
+
+    <div class="container m-5">
+        <div class="contenedor-editar">
+            <div class="mb-3">
+                <label for="nombre1" class="form-label">Primer Nombre</label>
+                <input class="form-control" id="nombre1" placeholder="Nombre">
+            </div>
+            <div class="mb-3">
+                <label for="nombre2" class="form-label">Segundo Nombre</label>
+                <input class="form-control" id="nombre2" placeholder="Nombre">
+            </div>
+            <div class="mb-3">
+                <label for="apellido1" class="form-label">Primer Apellido</label>
+                <input class="form-control" id="apellido1" placeholder="Apellido">
+            </div>
+            <div class="mb-3">
+                <label for="apellido2" class="form-label">Segundo Apellido</label>
+                <input class="form-control" id="apellido2" placeholder="Apellido">
+            </div>
+            <div class="mb-3">
+                <label for="eps">Seleccione EPS</label>
+                <select class="form-select"  aria-label="Default select example">
+                    <option selected> </option>
+                    <option value="1"> Cafesalud EPS</option>
+                    <option value="2">Coomeva EPS</option>
+                    <option value="3">EPS Sura</option>
+                    <option value="4">Famisanar EPS</option>
+                    <option value="5">Nueva EPS</option>
+                    <option value="6">Salud Total EPS</option>
+                    <option value="7">Sanitas EPS</option>
+                    <option value="8">EPS Compensar</option>
+                    <option value="9">Aliansalud EPS</option>
+                    <option value="10">Medimás EPS</option>
+                    <option value="11">Otra</option>
+                        
+                </select>
+            </div>
+            
+            <div class="mb-3">
+                <label for="celular" class="form-label">Celular</label>
+                <input class="form-control" id="celular" placeholder="311200...">
+            </div>
+
+            <div class="m-5 text-center">
+                <button class="btn border-dark rounded-pill" >Guardar</button>
+                <button class="btn border-dark rounded-pill" id="btn-cancelar" onclick="irInicio()">Cancelar</button>
+            </div>
+        </div>
+
+    </div>
+    
+</body>
+</html>

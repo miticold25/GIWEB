@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="/Css/Seleccion-plan.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+
+    <script src="../Js/SeleccionPlanes.js"></script>
+    <title>Selección de plan</title>
+</head>
+<body>
+    <nav class="nav justify-content-center bg-info text-bg-info p-2">
+        <h3>Selecciona uno de nuestros planes</h3>
+    </nav>
+
+    <div class="container-fluid m-5 text-center">
+        <div class="contenedor-planes" id="contenedor-planes">
+            <div class="contenedor-cards">
+                <div style="background-color: rgba(142, 130, 220, 0.719);" class="card w-75 mb-3">
+                    <div class="card-body">
+                        <h3 class="card-title">Viaje Ocasional</h3>
+                        <p class="card-text">Para conocer la ciudad y sus alrededores o llegar mas rapido donde quieras.</p>
+                        <h5>Desde 1.300 COP</h5>
+                        <div class="contenedor-btn">
+                            <button class="btn bg-light border-dark rounded-pill" onclick="mostrarOcasional()"> Ver más </button>
+                        </div>
+                    </div>
+                </div>
+                <div style="background-color: rgba(237, 176, 156, 0.835);" class="card w-75 mb-3">
+                    <div class="card-body">
+                        <h3 class="card-title">Plan Diario</h3>
+                        <p class="card-text">Para los amantes de pedalear,recorrer grandes distancias y cuidar el planeta.</p>
+                        <h5>Desde 9.900 COP</h5>
+                        <div class="contenedor-btn">
+                            <button class="btn bg-light border-dark rounded-pill" onclick="mostrarDiario()"> Ver más </button>
+                        </div>
+                    </div>
+                </div>
+                <div style="background-color: rgba(144, 192, 144, 0.835);" class="card w-75 mb-3">
+                    <div class="card-body">
+                        <h3 class="card-title">Plan Mensual</h3>
+                        <p class="card-text">Recomendado para quienes disfrutan de moverse pedaleando y a su vez usan otros transportes.</p>
+                        <h5>Desde 31.990COP</h5>
+                        <div class="contenedor-btn">
+                            <button class="btn bg-light border-dark rounded-pill" onclick="mostrarMensual()"> Ver más </button>
+                        </div>
+                    </div>
+                </div>
+                <div style="background-color: rgba(118, 149, 229, 0.835);" class="card w-75 mb-3">
+                    <div class="card-body">
+                        <h3 class="card-title">Plan Anual</h3>
+                        <p class="card-text">Ideal para quienes aman moverse pedaleando todos los dias del año.</p>
+                        <h5>Desde 229.000 COP</h5>
+                        <div class="contenedor-btn">
+                            <button class="btn bg-light border-dark rounded-pill" onclick="mostrarAnual()"> Ver más </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <h2 class="p-4 bg-info m-3 w-75">Especificaciones de los planes</h2>
+        </div>
+
+        <div class="contenedor-especificacion">
+            <div style="background-color: rgba(142, 130, 220, 0.719);" class="card w-75 mb-3">
+                <div class="card-body">
+                    <h3 class="card-title">Detalles del plan</h3>
+                    <h4 class="card-subtitle">Viaje Ocasional</h4>
+                    <h6 class="card-subtitle p-2">Los costos y beneficios del plan son:</h6>
+                    <p class="card-text">Retiro de bicicleta mecanica desde estación:</p><h5> 1.300 COP</h5>
+                    <p class="card-text">Retiro de bicicleta electrica desde estación:</p><h5> 2.500 COP</h5>
+                    <p class="card-text">Valor por minuto pedaleado:</p><h5> 150 COP</h5>
+                    <p class="instruccion">Tu plan te permite desplazarte de una estación a otra por solo un viaje</p>
+                    <div class="contenedor-botones">
+                        <button id="btn-aceptar" class="btn bg-light border-dark rounded-pill" onclick="aceptar()">Aceptar Plan</button>
+                        <p>Presiona cancelar para volver a la lista de planes</p>
+                        <button id="btn-cancelar" class="btn bg-light border-dark rounded-pill" onclick="cancelar()">Cancelar</button>
+                    </div>
+                </div>
+            </div>
+            <div style="background-color: rgba(237, 176, 156, 0.835);" class="card w-75 mb-3">
+                <div class="card-body">
+                    <h3 class="card-title">Detalles del plan</h3>
+                    <h4 class="card-subtitle">Plan Diario</h4>
+                    <h4>Los costos y beneficios del plan son:</h4>
+                    <p>Retiro de culaquier bicicleta desde estación</p><h5> 890 COP</h5>
+                    <p>4 Viajes de 60 minutos por dia:</p><h5>9.900 COP</h5>
+                    <p>cada minuto adicional cuesta:</p><h5>150 COP</h5>
+                    <p>Viaje numero 5 adicional cuesta:</p><h5>3.990 COP</h5>
+                    <p class="instruccion">Tu plan te permite realizar 4 viajes de 60 minutos en un mismo dia desde
+                        la estación que desees.Tambien te permite realizar un quinto viaje pero con un costo adicional
+                        .Despues de transcurridos los 60 minutos de cada viaje se cobra el tiempo adicional por minuto transcurrido.
+                    </p>
+                    <div class="contenedor-botones">
+                        <button id="btn-aceptar" class="btn bg-light border-dark rounded-pill" onclick="aceptar()">Aceptar Plan</button>
+                        <p>Preisona cancelar para volver a la lista de planes</p>
+                        <button id="btn-cancelar" class="btn bg-light border-dark rounded-pill"  onclick="cancelar()">Cancelar</button>
+                    </div>
+                </div>
+            </div>
+            <div style="background-color: rgba(144, 192, 144, 0.835);" class="card w-75 mb-3">
+                <div class="card-body">
+                    <h3 class="card-title">Detalles del plan</h3>
+                    <h4 class="card-subtitle">Plan Mensual</h4>
+                    <h4>Los costos y beneficios del plan son:</h4>
+                    <p>Retiro de cualquier bicicleta electrica desde estación</p><h5> 999 COP</h5>
+                    <p>4 Viajes de 60 minutos por dia:</p><h5>31.990 COP</h5>
+                    <p>cada minuto adicional cuesta:</p><h5>75 COP</h5>
+                    <p class="instruccion">Tu plan te permite realizar 4 viajes de 60 minutos en un mismo dia desde
+                        la estación que desees.Despues de transcurridos los 60 minutos de cada viaje se cobra el tiempo adicional por minuto transcurrido.
+                    </p>
+                    <div class="contenedor-botones">
+                        <button id="btn-aceptar" class="btn bg-light border-dark rounded-pill" onclick="aceptar()">Aceptar Plan</button>
+                        <p>Preisona cancelar para volver a la lista de planes</p>
+                        <button id="btn-cancelar" class="btn bg-light border-dark rounded-pill" onclick="cancelar()">Cancelar</button>
+                    </div>
+                </div>
+            </div>
+            <div style="background-color: rgba(118, 149, 229, 0.835);" class="card w-75 mb-3">
+                <div class="card-body">
+                    <h3 class="card-title">Detalles del plan</h3>
+                    <h4 class="card-subtitle">Plan Anual</h4>
+                    <h4>Los costos y beneficios del plan son:</h4>
+                    <p>Retiro de cualquier bicicleta electrica desde estación</p><h5> 999 COP</h5>
+                    <p>4 Viajes de 60 minutos por dia:</p><h5>229.900 COP</h5>
+                    <p>cada minuto adicional cuesta:</p><h5>75 COP</h5>
+                    <p class="instruccion">Tu plan te permite realizar 4 viajes de 60 minutos en un mismo dia desde
+                        la estación que desees.Despues de transcurridos los 60 minutos de cada viaje se cobra el tiempo adicional por minuto transcurrido.
+                    </p>
+                    <div class="contenedor-botones">
+                        <button id="btn-aceptar" class="btn bg-light border-dark rounded-pill" onclick="aceptar()">Aceptar Plan</button>
+                        <p>Preisona cancelar para volver a la lista de planes</p>
+                        <button id="btn-cancelar" class="btn bg-light border-dark rounded-pill" onclick="cancelar()" >Cancelar</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    
+</body>
+</html>

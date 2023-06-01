@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="/Css/InicioAdmin.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+
+    <script src="../Js/Admin.js"></script>
+    <script src="https://kit.fontawesome.com/a9a1581891.js" crossorigin="anonymous"></script>
+    <title>Inicio</title>
+</head>
+<body>
+    <nav class="nav justify-content-center bg-info text-bg-info p-2">
+        <h2>Bienvenido</h2>
+    </nav>
+    <div class="m-3 text-center">
+        <div class="d-flex justify-content-center align-items-center">
+            <a href="Editar-perfil.html" class="p-2" ><i class="fa fa-user"></i></a>
+            <h6 class="p-2">Editar perfil</h6>
+        </div>
+
+        <div class="contenedor-mapa">
+            <img class="w-75 m-4" src="../Imagenes/Mapa_Bogota_Inicio.png" alt="">
+        </div>
+
+        <div class="contenedor-botonesc m-4">
+            <button id="registrarEstaciones" class="btn btn-lg border-dark rounded-pill" onclick="registrarEstacionesBici()" >Registrar estaciones</button>
+            <button id="verEstaciones" class="btn btn-lg border-dark rounded-pill" onclick="irVerEstaciones()">Ver estaciones</button> 
+            
+        </div>
+
+    </div>
+    
+</body>
+</html>

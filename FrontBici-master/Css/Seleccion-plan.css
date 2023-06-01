@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: black;
+  }
+  .contenedor-principal{
+    border: solid salmon;
+  }
+  .contenedor-planes{
+    border: solid green;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .detalle-viaje-ocasional{
+    display: none;
+  }
+  .detalle-viaje-diario{
+    display: none;
+  }
+  .detalle-viaje-mensual{
+    display: none;
+  }
+  .detalle-viaje-anual{
+    display: none;
+  }
+  .contenedor-especificacion{
+    border: solid purple;
+    
+  }

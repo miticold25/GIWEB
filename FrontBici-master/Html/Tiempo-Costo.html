@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="/Css/Tiempo-Costo.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+
+    <script src="../Js/Confirmaciones.js"></script>
+    <title>Tiempo y Costo de viaje</title>
+</head>
+<body>
+    <div class="container m-5">
+        <div class="contenedor-tiempo">
+            <h2>Tiempo Transcurrido de viaje</h2>
+            <div class="contenedor-cronometro">
+
+            </div>
+            <div class="contenedor-info">
+
+                <h3>Si la estación de llegada esta llena debes dirigirte a otra estacion cercana para anclar la bicicleta</h3>
+                <p>recuerda que debes anclar la bicileta antes de finalizar el viaje</p>
+                <div class="contenedor-boton">
+                    <button class="btn border-dark rounded-pill">Finalizar Viaje</button>
+                </div>
+            </div>
+
+        </div>
+        <div class="contenedor-costo m-4 text-center">
+            <h2>El costo de tu viaje fue de:</h2>
+            <div class="contenedor-valor">
+                <label for="valor"></label>
+                <input type="hidden" id="valor" name="valor">
+            </div>
+            <div class="contenedor-boton">
+                <button id="btn-cancelar" class="btn border-dark rounded-pill" onclick="irInicio()">Aceptar</button>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

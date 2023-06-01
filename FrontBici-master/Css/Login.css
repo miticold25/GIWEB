@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .contenedor-principal{
+    background-color: #FFFF;
+    border: solid red;
+  }
+  .contenedor-login{
+    background-color: #F2F0EB;
+    border: solid black;
+  }
+  .header-login{
+    background-color: #BBC3F2;
+    border:solid green
+  }
+  .contenedor-form{
+    border:solid blue
+  }
+  .btn-iniciar{
+    background-color: #BBC3F2;
+  }
+  .btn-registrar{
+    background-color: #BBC3F2;
+  }
+
